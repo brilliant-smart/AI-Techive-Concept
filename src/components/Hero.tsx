@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Users, Award } from "lucide-react";
+import { ArrowRight, Play, Users, Award, Presentation } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -13,9 +13,18 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            AI Techive Concept delivers high-impact online training through
-            ShuraForAll.org, helping individuals learn in-demand digital skills
-            and grow into future trainers.
+            <span className="block text-2xl md:text-3xl font-semibold text-primary mb-4">
+              Learn. Grow. Lead.
+            </span>
+            Through powerful online training on the{" "}
+            <span className="font-medium text-white">ShuraForAll</span>{" "}
+            platform,
+            <span className="font-semibold text-white">
+              {" "}
+              AI Techive Concept
+            </span>{" "}
+            is building a new generation of digital experts — empowered to
+            succeed and prepared to train others.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -29,8 +38,8 @@ const Hero = () => {
               size="hero"
               className="border-white text-primary hover:bg-white hover:text-secondary-foreground"
             >
-              <Play className="w-5 h-5 mr-2" />
-              Join Our Platform
+              <Users className="w-5 h-5 mr-2" />
+              Join Our Community
             </Button>
           </div>
 

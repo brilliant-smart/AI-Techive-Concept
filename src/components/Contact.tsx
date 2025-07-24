@@ -7,6 +7,8 @@ import { FaWhatsapp } from "react-icons/fa";
 type FormValues = {
   name: string;
   email: string;
+  problemType: string;
+  phone: string;
   message: string;
 };
 
@@ -202,6 +204,52 @@ const Contact = () => {
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">
                     {errors.email.message}
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-muted-foreground mb-1">
+                  Description of the Problem
+                </label>
+                <select
+                  {...register("problemType", {
+                    required: "Please select a type",
+                  })}
+                  className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                >
+                  <option value="">Select one</option>
+                  <option value="complaint">Complaint</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+                {errors.problemType && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.problemType.message}
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-muted-foreground mb-1">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  {...register("phone", {
+                    required: "Phone number is required",
+                    pattern: {
+                      value: /^[\d+()\-.\s]{7,}$/,
+                      message: "Enter a valid phone number",
+                    },
+                  })}
+                  placeholder="+234 801 234 5678"
+                  className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                />
+                {errors.phone && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.phone.message}
                   </p>
                 )}
               </div>

@@ -6,32 +6,33 @@ const HowItWorks = () => {
       icon: UserPlus,
       title: "Join us on ShuraForAll.org",
       description: "Sign up and become part of our learning community",
-      step: "01"
+      step: "01",
     },
     {
       icon: Target,
       title: "Pick a Skill",
-      description: "Choose from our diverse range of programs that match your interests",
-      step: "02"
+      description:
+        "Choose from our diverse range of programs that match your interests",
+      step: "02",
     },
     {
       icon: Wrench,
       title: "Learn by Doing",
       description: "Engage with hands-on projects and real-world applications",
-      step: "03"
+      step: "03",
     },
     {
       icon: Award,
       title: "Get Certified",
       description: "Build your portfolio and earn recognized certifications",
-      step: "04"
+      step: "04",
     },
     {
       icon: GraduationCap,
       title: "Become a Trainer",
       description: "Inspire others through our Train-the-Trainer track",
-      step: "05"
-    }
+      step: "05",
+    },
   ];
 
   return (
@@ -46,7 +47,7 @@ const HowItWorks = () => {
           </p>
           <div className="w-24 h-1 bg-primary mx-auto mt-6"></div>
         </div>
-        
+
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
             {steps.map((step, index) => (
@@ -57,7 +58,7 @@ const HowItWorks = () => {
                     <div className="w-full h-full bg-gradient-to-r from-primary to-primary/30"></div>
                   </div>
                 )}
-                
+
                 <div className="relative z-10 card-gradient p-6 rounded-xl shadow-card hover:shadow-elegant transition-smooth hover:scale-105 transform text-center">
                   <div className="relative mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-glow rounded-xl flex items-center justify-center mx-auto shadow-glow">
@@ -67,26 +68,17 @@ const HowItWorks = () => {
                       {step.step}
                     </div>
                   </div>
-                  
+
                   <h3 className="text-lg font-bold mb-3 text-foreground">
                     {step.title}
                   </h3>
-                  
+
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-        
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-4 bg-primary/10 px-8 py-4 rounded-full">
-            <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
-            <span className="text-primary font-semibold">
-              Start your transformation journey today!
-            </span>
           </div>
         </div>
       </div>

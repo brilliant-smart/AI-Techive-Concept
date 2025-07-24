@@ -9,7 +9,6 @@ import {
   Users,
   GraduationCap,
   Code,
-  // FaChalkboardTeacher,
   Megaphone,
 } from "lucide-react";
 
@@ -80,9 +79,7 @@ const Programs = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Our <span className="gradient-text">Programs</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We train you to become a professional — and a trainer.
-          </p>
+
           <div className="w-24 h-1 bg-primary mx-auto mt-6"></div>
         </div>
 
