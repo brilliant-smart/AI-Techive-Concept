@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/AI-Techive-navbar-logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,21 +27,8 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          {/* <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AT</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">
-              AI Techive
-            </span>
-          </div> */}
           <div className="flex items-center">
-            <img
-              src="/AI-Techive-navbar-logo.png"
-              alt="AI Techive"
-              className="h-10 w-auto"
-            />
+            <img src={logo} alt="AI Techive" className="h-10 w-auto" />
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
