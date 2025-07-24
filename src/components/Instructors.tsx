@@ -8,7 +8,7 @@ const instructors = [
   {
     name: "Adamu Iliyasu",
     role: "Data Analyst | Excel Expert | Transforming Data into Actionable Insights",
-    image: "/public/Adamu-Iliyasu.png",
+    image: "/Adamu-Iliyasu.png",
     bio: "Detail-oriented data analyst with a strong background in using Excel to organize, clean, and interpret complex datasets. Passionate about transforming raw data into clear, actionable insights that drive business decisions.",
     specialties: [
       "Data Analysis",
@@ -25,7 +25,7 @@ const instructors = [
   {
     name: "Hamisu Abubakar Muhammad",
     role: "Full-Stack Developer | AI & LLM Engineer | Specializing in Health Tech & LLM-Web Integration",
-    image: "/public/Brilliant-Smart.png",
+    image: "/Brilliant-Smart.png",
     bio: "Experienced full-stack developer with a strong foundation in web technologies and AI integration. Skilled in building and deploying dynamic websites and intelligent systems. Currently focused on leveraging LLMs to drive innovation in health tech.",
     specialties: [
       "Full-Stack Web Development",
@@ -42,7 +42,7 @@ const instructors = [
   {
     name: "Muhammad Auwal Adam",
     role: "Public Speaker | Podcast Host | Program Organizer & Motivational Leader",
-    image: "/public/Auwal-Adam.png",
+    image: "/Auwal-Adam.png",
     bio: "Dynamic communicator with a passion for public speaking, podcast hosting, and inspiring audiences. Skilled in organizing impactful programs, delivering motivational talks, and creating engaging content that resonates with diverse groups.",
     specialties: [
       "Public Speaking",

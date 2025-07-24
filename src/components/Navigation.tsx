@@ -37,7 +37,7 @@ const Navigation = () => {
           </div> */}
           <div className="flex items-center">
             <img
-              src="/public/AI-Techive-navbar-logo.png"
+              src="/AI-Techive-navbar-logo.png"
               alt="AI Techive"
               className="h-10 w-auto"
             />
