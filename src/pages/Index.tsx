@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Programs from "@/components/Programs";
 import HowItWorks from "@/components/HowItWorks";
+import TrainTheTrainer from "@/components/TrainTheTrainer";
 import Instructors from "@/components/Instructors";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -28,6 +29,10 @@ const Index = () => {
 
         <section id="how-it-works">
           <HowItWorks />
+        </section>
+
+        <section id="train-the-trainer">
+          <TrainTheTrainer />
         </section>
 
         <section id="instructors">
