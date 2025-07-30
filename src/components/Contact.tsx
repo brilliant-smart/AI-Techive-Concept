@@ -244,7 +244,7 @@ const Contact = () => {
                       message: "Enter a valid phone number",
                     },
                   })}
-                  placeholder="+234 801 234 5678"
+                  placeholder="+234 803 462 5258"
                   className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground focus:ring-2 focus:ring-primary focus:outline-none"
                 />
                 {errors.phone && (
